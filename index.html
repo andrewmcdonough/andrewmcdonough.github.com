@@ -293,23 +293,6 @@ Performance poetry - your reviews
 </section>
 
 <section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("andrewmcdonough", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/andrewmcdonough" class="twitter-follow-button" data-show-count="false">Follow @andrewmcdonough</a>
-  
-</section>
-
-
-<section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
     <li class="loading">Status updating&#8230;</li>
@@ -329,13 +312,30 @@ Performance poetry - your reviews
 
         github.showRepos({
             user: 'andrewmcdonough',
-            count: 10,
+            count: 0,
             skip_forks: true,
             target: '#gh_repos'
         });
     });
   </script>
   <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("andrewmcdonough", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/andrewmcdonough" class="twitter-follow-button" data-show-count="false">Follow @andrewmcdonough</a>
+  
 </section>
 
 
