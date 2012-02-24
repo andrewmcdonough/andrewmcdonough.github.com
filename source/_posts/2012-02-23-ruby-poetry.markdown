@@ -6,17 +6,17 @@ comments: true
 categories: 
 ---
 
-On Tuesday evening, I gave a talk at the <a href='http://lrug.org'>London Ruby Users Group (LRUG)</a> entitled "Ruby Poetry".  Inspired by <a href='http://twitter.com/hlame'>Murray Steele's</a> "<a href='http://skillsmatter.com/podcast/ajax-ria/my-first-ruby'>My First Ruby</a>" talk at a previous LRUG, I decided to tell a story about a small progam I wrote about five years ago, when I was fairly new to ruby.  At the time, I had just made the transition to ruby after years as Java developer, and I was amazed at how easy it was to solve problems without having to write very much code.
+On Tuesday evening, I gave a 20 slide 'lightning talk' at the <a href='http://lrug.org'>London Ruby Users Group (LRUG)</a> entitled "Ruby Poetry".  Inspired by <a href='http://twitter.com/hlame'>Murray Steele's</a> "<a href='http://skillsmatter.com/podcast/ajax-ria/my-first-ruby'>My First Ruby</a>" talk at a previous LRUG, I decided to tell a story about a small progam I wrote about five years ago, when I was fairly new to ruby.  At the time, I had just made the transition to ruby after years as Java developer, and I was amazed at how easy it was to solve problems without having to write very much code.
 
-The story starts when I was invited to a party.  The party was a themed <a href='http://en.wikipedia.org/wiki/Burns_supper'>Burns Night</a> dinner.  These celebrations are common in Scotland to celebrate the life and poetry of <a href='http://en.wikipedia.org/wiki/Robert_Burns'>Robert Burns</a>.  I had been invited to the same party the previous year, and remembered back to enjoying the haggis and whisky.  One thing I remembered that had not felt particularly comfortable with, is that I had been asked to bring a poem to read.  When I got there, most people had written their own, and I felt bad for lacking creativity.  I decided that this time around, I would try to be creative in my own way, harnessing the power of ruby to help me.  Rather than telling the story again here, I'll just link to my talk, which was kindly videoed by <a href='http://skillsmatter.com'>Skills Matter</a>:
+The story starts when I was invited to a party.  The party was a themed <a href='http://en.wikipedia.org/wiki/Burns_supper'>Burns Night</a> dinner.  These celebrations are common in Scotland to celebrate the life and poetry of <a href='http://en.wikipedia.org/wiki/Robert_Burns'>Robert Burns</a>.  I had been invited to the same party the previous year, and remembered back to enjoying the haggis and whisky.  One thing I remembered that had not felt particularly comfortable with, is that I had been asked to bring a poem to read.  On the evening, instead of brining poems, most people had written their own, and I felt bad for lacking creativity.  I decided that this time around, I would try to be creative in my own way, and write a ruby program to generate some topical poetry from the day's news headlines.  I won't go into too much detail here, as my five minute talk  was kindly videoed by <a href='http://skillsmatter.com'>Skills Matter</a>:
 
 <a href='http://skillsmatter.com/podcast/home/lrug-custom-documentation-generators'>Ruby Poetry Presentation Video</a>
 
-### The code
+## The final code
+The code below is what I used to generate the couplets on the day.  While I had been tuning my algorithm, I wrote the headlines to a file so I didn't have to reload them eachc time. The full source is <a href='https://github.com/andrewmcdonough/ruby-poetry'>on github</a>.
+
 ``` ruby generate_topical_rhyming_couplets
 #!/usr/bin/env ruby
-
-require 'open-uri'
 require 'rss'
 
 # Open the list of feeds
@@ -68,17 +68,7 @@ end
 
 ```
 
-### Full source on github
-I used the program above on the day, but while I was tuning my algorithm, I wrote the headlines to a file, and read them back in while I made changes:
-<a href='https://github.com/andrewmcdonough/ruby-poetry'>https://github.com/andrewmcdonough/ruby-poetry</a>
-
-### My Slides
-
-I used <a href='https://github.com/schacon/showoff'>showoff</a> for my slides.  I much prefer it over Keynote or Powerpoint, as it allows you to write your slides in markdown, and keep them in version control.  I have published my presentation on Heroku, and the source for it is <a href='https://github.com/andrewmcdonough/ruby-poetry-presentation'>on github</a>:
-
-<a href='http://ruby-poetry.heroku.com'>http://ruby-poetry.heroku.com</a>
-
-Thanks to <a href='http://twitter.com/joelchippindale'>Joel Chippendale</a> for introducting me to showoff in his LRUG lightning talk two years ago.  I borrowed his <a href='https://github.com/mocoso/showing-off-with-ruby/blob/master/2020.js'>2020.js code</a> for the automatic slide transitions.
+As the couplet finding algoritm was fairly crude, only looking for matches of the last three letters, and not the phonetic reprentation, I allowed myself to pick the best couplets as generated on the day.  To demonstrate my code, I reran the program on the day of my talk, and read the best couplets it generated at the end:
 
 ### The final poem, as generated on the day of the talk*
 <div class='paper'>Eurozone agrees second Greek bail-out
@@ -112,4 +102,6 @@ One-minute World News
 Performance poetry - your reviews
 </div>
 
-Note that these were the best generated couplets that were generated, and I reordered a few of the pairs, but not the pairs themselves.
+I particularly like the last one, which was genui#nely generated on the day.
+
+So the two talks I have given at LRUG have been entitled Ruby Poetry and <a href="rubygolf-presentation.heroku.com">Ruby Golf</a>.  What Ruby &lt;insert word here&gt; should I do next?
