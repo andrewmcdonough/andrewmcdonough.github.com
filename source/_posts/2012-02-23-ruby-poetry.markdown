@@ -8,16 +8,17 @@ categories:
 
 On Tuesday evening, I gave a 20 slide 'lightning talk' at the <a href='http://lrug.org'>London Ruby Users Group (LRUG)</a> entitled "Ruby Poetry".  Inspired by <a href='http://twitter.com/hlame'>Murray Steele</a>'s "<a href='http://skillsmatter.com/podcast/ajax-ria/my-first-ruby'>My First Ruby</a>" talk at a previous LRUG, I decided to tell a story about a small progam I wrote about five years ago, when I was fairly new to ruby.  At the time, I had just made the transition to ruby after years as Java developer, and I was amazed at how easy it was to solve problems without having to write very much code.
 
-The story starts when I was invited to a party.  The party was a themed <a href='http://en.wikipedia.org/wiki/Burns_supper'>Burns Night</a> dinner.  These celebrations are common in Scotland to celebrate the life and poetry of <a href='http://en.wikipedia.org/wiki/Robert_Burns'>Robert Burns</a>.  I had been invited to the same party the previous year, and remembered back to enjoying the haggis and whisky.  One thing I remembered that had not felt particularly comfortable with, is that I had been asked to bring a poem to read.  On the evening, instead of brining poems, most people had written their own, and I felt bad for lacking creativity.  I decided that this time around, I would try to be creative in my own way, and write a ruby program to generate some topical poetry from the day's news headlines.  I won't go into too much detail here, as my five minute talk  was kindly videoed by <a href='http://skillsmatter.com'>Skills Matter</a>:
+The story starts when I was invited to a party.  The party was a themed <a href='http://en.wikipedia.org/wiki/Burns_supper'>Burns Night</a> dinner.  These celebrations are common in Scotland to celebrate the life and poetry of <a href='http://en.wikipedia.org/wiki/Robert_Burns'>Robert Burns</a>.  I had been invited to the same party the previous year, and remembered back to enjoying the haggis and whisky.  One thing I recalled that had not felt particularly comfortable with, is that I had been asked to bring a poem to read.  On the evening, instead of bringing poems from books, most people had written their own, and I felt bad for lacking creativity.  I decided that this time around, I would try to be creative in my own way, and wrote a ruby program to generate some topical poetry from the day's news headlines.  I won't go into too much detail here, as my five minute talk  <a href='http://skillsmatter.com/podcast/home/lrug-custom-documentation-generators'>was kindly videoed by Skills Matter</a>:
 
-<a href='http://skillsmatter.com/podcast/home/lrug-custom-documentation-generators'>Ruby Poetry Presentation Video</a>
+<center><a href='http://skillsmatter.com/podcast/home/lrug-custom-documentation-generators'><img src='/images/blog/poetry/video.png' /></a></center>
 
-## The final code
-The code below is what I used to generate the couplets on the day.  While I had been tuning my algorithm, I wrote the headlines to a file so I didn't have to reload them eachc time. The full source is <a href='https://github.com/andrewmcdonough/ruby-poetry'>on github</a>.
+## generate_topical_rhyming_couplets.rb
+The code below is what I used to generate the couplets on the day.  While I had been tuning my algorithm, I wrote the headlines to a file so I didn't have to reload them each time. The full source is <a href='https://github.com/andrewmcdonough/ruby-poetry'>on github</a>.
 
 ``` ruby generate_topical_rhyming_couplets
 #!/usr/bin/env ruby
 require 'rss'
+require 'open-uri'
 
 # Open the list of feeds
 fh = open("feeds.txt")
