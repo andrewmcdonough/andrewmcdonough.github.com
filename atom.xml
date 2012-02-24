@@ -4,7 +4,7 @@
   <title><![CDATA[Andrew McDonough]]></title>
   <link href="http://andrewmcdonough.github.com/atom.xml" rel="self"/>
   <link href="http://andrewmcdonough.github.com/"/>
-  <updated>2012-02-24T13:13:51+00:00</updated>
+  <updated>2012-02-24T15:19:49+00:00</updated>
   <id>http://andrewmcdonough.github.com/</id>
   <author>
     <name><![CDATA[Andrew McDonough]]></name>
@@ -132,9 +132,9 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>As the couplet finding algoritm was fairly crude, only looking for matches of the last three letters, and not the phonetic reprentation, I allowed myself to pick the best couplets as generated on the day.  To demonstrate my code, I reran the program on the day of my talk, and read the best couplets it generated at the end:</p>
+<p>As the couplet finding algorithm was fairly crude, only looking for matches of the last three letters, and not the phonetic reprentation, I allowed myself to pick the best couplets as generated on the day.  To demonstrate my code, I reran the program on the day of my talk, and read the best couplets it generated at the end:</p>
 
-<h3>The final poem, as generated on the day of the talk*</h3>
+<h3>The final poem, as generated on the day of the talk</h3>
 
 <div class='paper'>Eurozone agrees second Greek bail-out
 Haye trainer rules out Chisora bout
@@ -171,6 +171,11 @@ Performance poetry - your reviews
 <p>I particularly like the last one, which like the others, was genuinely generated on the day.</p>
 
 <p>So the two talks I have given at LRUG have been entitled Ruby Poetry and <a href="rubygolf-presentation.heroku.com">Ruby Golf</a>.  What Ruby &lt;insert word here&gt; should I do next?</p>
+
+<br/>
+
+
+<p><strong><a href='http://tribesports.com'>Tribesports</a> is hiring developers in London.  <a href='http://techblog.tribesports.com/join-the-tribe'>Find out more here.</a></strong></p>
 ]]></content>
   </entry>
   
