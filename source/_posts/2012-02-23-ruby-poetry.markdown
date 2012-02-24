@@ -106,3 +106,8 @@ Performance poetry - your reviews
 I particularly like the last one, which like the others, was genuinely generated on the day.
 
 So the two talks I have given at LRUG have been entitled Ruby Poetry and <a href="rubygolf-presentation.heroku.com">Ruby Golf</a>.  What Ruby &lt;insert word here&gt; should I do next?
+
+
+
+<br/>
+**<a href='http://tribesports.com'>Tribesports</a> is hiring developers in London.  <a href='http://techblog.tribesports.com/join-the-tribe'>Find out more here.</a>**
