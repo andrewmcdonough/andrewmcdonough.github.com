@@ -69,7 +69,7 @@ end
 
 ```
 
-As the couplet finding algoritm was fairly crude, only looking for matches of the last three letters, and not the phonetic reprentation, I allowed myself to pick the best couplets as generated on the day.  To demonstrate my code, I reran the program on the day of my talk, and read the best couplets it generated at the end:
+As the couplet finding algorithm was fairly crude, only looking for matches of the last three letters, and not the phonetic reprentation, I allowed myself to pick the best couplets as generated on the day.  To demonstrate my code, I reran the program on the day of my talk, and read the best couplets it generated at the end:
 
 ### The final poem, as generated on the day of the talk*
 <div class='paper'>Eurozone agrees second Greek bail-out
