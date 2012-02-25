@@ -4,7 +4,7 @@
   <title><![CDATA[Andrew McDonough]]></title>
   <link href="http://andrewmcdonough.github.com/atom.xml" rel="self"/>
   <link href="http://andrewmcdonough.github.com/"/>
-  <updated>2012-02-25T14:44:09+00:00</updated>
+  <updated>2012-02-25T21:59:21+00:00</updated>
   <id>http://andrewmcdonough.github.com/</id>
   <author>
     <name><![CDATA[Andrew McDonough]]></name>
@@ -132,7 +132,7 @@
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p>As the couplet finding algorithm was fairly crude, only looking for matches of the last three letters, and not the phonetic reprentation, I allowed myself to pick the best couplets as generated on the day.  To demonstrate my code, I reran the program on the day of my talk, and read the best couplets it generated at the end:</p>
+<p>As the couplet finding algorithm was fairly crude, only looking for matches of the last three letters, and not the phonetic representation, I allowed myself to pick the best couplets as generated on the day.  To demonstrate my code, I reran the program on the day of my talk, and read the best couplets it generated at the end of my presentation:</p>
 
 <h3>The final poem, as generated on the day of the talk</h3>
 
