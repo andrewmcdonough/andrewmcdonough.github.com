@@ -203,7 +203,7 @@
 </span><span class='line'><span class="k">end</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># Sort the headlines by the last three letters</span>
-</span><span class='line'><span class="n">headlines</span><span class="o">.</span><span class="n">sort!</span> <span class="p">{</span><span class="o">|</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">|</span>  <span class="n">a</span><span class="o">[-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="o">&lt;=&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">reverse</span><span class="o">[-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="p">}</span>
+</span><span class='line'><span class="n">headlines</span><span class="o">.</span><span class="n">sort!</span> <span class="p">{</span><span class="o">|</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">|</span>  <span class="n">a</span><span class="o">[-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="o">&lt;=&gt;</span> <span class="n">b</span><span class="o">[-</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="c1"># Iterate over the headlines, testing in pairs for couplets</span>
 </span><span class='line'><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
